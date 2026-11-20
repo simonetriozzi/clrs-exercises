@@ -868,71 +868,6 @@
       font-size: 0.92rem;
     }
 
-    /* Uncovered Syllabus Sections Reference Table */
-    .uncovered-section {
-      margin-block-start: 3rem;
-      padding-block-start: 1.75rem;
-      border-block-start: 2px solid var(--border-hairline);
-    }
-
-    .uncovered-section h2 {
-      font-family: var(--font-serif);
-      font-size: 1.35rem;
-      margin: 0 0 0.4rem 0;
-    }
-
-    .uncovered-section > p {
-      margin: 0 0 1rem 0;
-      color: var(--text-secondary);
-      font-size: 0.92rem;
-    }
-
-    .table-wrap {
-      overflow-x: auto;
-      border: 1px solid var(--border-hairline);
-      border-radius: var(--radius-md);
-      background-color: var(--bg-surface);
-    }
-
-    table.ref-table {
-      inline-size: 100%;
-      border-collapse: collapse;
-      font-size: 0.88rem;
-      text-align: start;
-    }
-
-    table.ref-table caption {
-      text-align: start;
-      padding: 0.75rem 1rem;
-      font-family: var(--font-mono);
-      font-size: 0.78rem;
-      color: var(--text-secondary);
-      border-block-end: 1px solid var(--border-hairline);
-    }
-
-    table.ref-table th,
-    table.ref-table td {
-      padding: 0.7rem 1rem;
-      border-block-end: 1px solid var(--border-hairline);
-      vertical-align: top;
-    }
-
-    table.ref-table thead th {
-      background-color: var(--bg-subtle);
-      font-weight: 600;
-      font-size: 0.82rem;
-    }
-
-    table.ref-table tbody tr:last-child td {
-      border-block-end: none;
-    }
-
-    table.ref-table a {
-      color: var(--accent);
-      text-decoration: underline;
-      text-underline-offset: 3px;
-    }
-
     /* Footer */
     .site-footer {
       grid-area: footer;
@@ -2060,66 +1995,6 @@ if v.d &lt; u.d * r(u, v)
               </div>
             </details>
           </article>
-        </div>
-      </section>
-
-      <!-- ===================== UNCOVERED SYLLABUS SECTIONS ===================== -->
-      <section class="uncovered-section" id="sezioni-senza-cormen">
-        <h2>Sezioni del programma assenti da Selected Solutions di Cormen</h2>
-        <p>
-          Le sezioni seguenti compaiono nello screenshot del programma del docente, ma hanno <strong>0 esercizi</strong> in <code>Selected Solutions by T. Cormen.pdf</code>. Puoi accedere direttamente alle altre raccolte caricate dal docente o a walkccc:
-        </p>
-
-        <div class="table-wrap">
-          <table class="ref-table">
-            <caption>Riferimenti alternativi per le sezioni d'esame non incluse nel PDF ufficiale di Cormen</caption>
-            <thead>
-              <tr>
-                <th scope="col">Sezione programma</th>
-                <th scope="col">Argomento</th>
-                <th scope="col">Stato in Cormen PDF</th>
-                <th scope="col">Link diretti (tracce e soluzioni)</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>CLRS Cap. 1</td>
-                <td>The Role of Algorithms</td>
-                <td>0 soluzioni</td>
-                <td><a href="https://walkccc.me/CLRS/Chap01/1.1/" target="_blank" rel="noopener">walkccc 1.1-1.2</a>, <a href="https://sites.math.rutgers.edu/~ajl213/CLRS/Ch1.pdf" target="_blank" rel="noopener">Bodnar &amp; Lohr Ch1.pdf</a></td>
-              </tr>
-              <tr>
-                <td>CLRS Cap. 10</td>
-                <td>Elementary Data Structures (Stacks, Queues, Linked Lists)</td>
-                <td>0 soluzioni (pagina vuota p. 34)</td>
-                <td><a href="https://walkccc.me/CLRS/Chap10/10.1/" target="_blank" rel="noopener">walkccc 10.1-10.4</a>, <a href="https://sites.math.rutgers.edu/~ajl213/CLRS/Ch10.pdf" target="_blank" rel="noopener">Bodnar &amp; Lohr Ch10.pdf</a></td>
-              </tr>
-              <tr>
-                <td>CLRS Cap. 13 (sez. 13.2)</td>
-                <td>Rotations (single rotations)</td>
-                <td>0 soluzioni su 13.2 (solo 13.1 e 13.3)</td>
-                <td><a href="https://walkccc.me/CLRS/Chap13/13.2/" target="_blank" rel="noopener">walkccc 13.2</a>, <a href="https://donrwalsh.github.io/CLRS/solutions/13/e13.2-1" target="_blank" rel="noopener">Don R. Walsh 13.2-1..5</a></td>
-              </tr>
-              <tr>
-                <td>CLRS Appendice A (sez. A.1)</td>
-                <td>Summation formulas and properties</td>
-                <td>0 soluzioni</td>
-                <td><a href="https://donrwalsh.github.io/CLRS/solutions/a1/a.1-1" target="_blank" rel="noopener">Don R. Walsh A.1-1..8 (tracce + sol.)</a>, <a href="https://sites.math.rutgers.edu/~ajl213/CLRS/Appendix%20A.pdf" target="_blank" rel="noopener">Bodnar &amp; Lohr App. A</a></td>
-              </tr>
-              <tr>
-                <td>CLRS Appendice B (B.4, B.5)</td>
-                <td>Graphs and Trees</td>
-                <td>0 soluzioni</td>
-                <td><a href="https://sites.math.rutgers.edu/~ajl213/CLRS/Appendix%20B.pdf" target="_blank" rel="noopener">Bodnar &amp; Lohr Appendix B.pdf</a> (solo soluzioni; tracce sul libro)</td>
-              </tr>
-              <tr>
-                <td>Goodrich et al. Cap. 11 (sez. 11.3)</td>
-                <td>AVL Trees (Python)</td>
-                <td>Non fa parte del CLRS</td>
-                <td>Nessuna soluzione caricata dal docente; fare riferimento alle slide <code>Lecture_7/Trees.pdf</code> e <code>Problem Set 6.pdf</code></td>
-              </tr>
-            </tbody>
-          </table>
         </div>
       </section>
     </main>
